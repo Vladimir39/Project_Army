@@ -1,0 +1,104 @@
+.navBar {
+  display: flex;
+  justify-content: space-between;
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.navBar h3 {
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.navBar ul {
+  margin-top: 0px;
+}
+.navBar li {
+  font-size: 15px;
+  cursor: pointer;
+}
+
+.navBarAdaptive {
+  width: 1000px;
+  margin-bottom: 100px;
+  padding: 0;
+  display: none;
+}
+
+.navBarAdaptive .menu ul li {
+  position: relative;
+  float: left;
+  padding: 15px;
+  color: black;
+  font-size: 16px;
+  display: block;
+  background: #fff;
+  cursor: pointer;
+}
+
+.navBarAdaptive .menu ul li:hover {
+  background: #000;
+  color: azure;
+}
+
+.menu ul li ul {
+  position: absolute;
+  left: 0;
+  width: 200px;
+  margin-top: 0px;
+  display: none;
+  z-index: 2;
+  background-color: #fff;
+}
+
+.menu ul li ul li {
+  width: 100%;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  margin: 0;
+  padding: 0;
+}
+
+.menu ul li:hover > ul {
+  display: initial;
+}
+
+@media (max-width: 1400px) {
+  .container {
+    width: 1200px;
+  }
+}
+@media (max-width: 1200px) {
+  .navBar {
+    display: none;
+  }
+
+  .navBarAdaptive {
+    display: block;
+  }
+}
+@media (max-width: 1000px) {
+  .navBarAdaptive {
+    width: 768px;
+  }
+}
+@media (max-width: 768px) {
+  .navBarAdaptive {
+    width: 480px;
+    margin: 0;
+    padding: 0;
+  }
+  .menu {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .menu ul {
+    width: 480px;
+    padding: 0;
+    margin: 0;
+  }
+}
+@media (max-width: 480px) {
+  .navBarAdaptive {
+    width: 400px;
+  }
+}

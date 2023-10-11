@@ -1,0 +1,397 @@
+.container {
+  width: 1400px;
+  margin: 0 auto;
+}
+
+.container h1 {
+  font-size: 22px;
+  margin: 5px;
+}
+.container li {
+  font-size: 13px;
+  margin: 5px;
+}
+
+.basket {
+  display: flex;
+  justify-content: space-between;
+}
+
+.itemsCardOrder {
+  display: flex;
+  justify-content: space-between;
+  border-top: 1px solid #f5f5f5;
+  padding: 20px 0;
+  width: 1000px;
+}
+
+.infoItem img {
+  width: 160px;
+}
+
+.infoItem {
+  display: flex;
+}
+
+.infoItem h2 {
+  color: #333;
+  font-size: 16px;
+  padding: 0;
+  margin: 0;
+}
+
+.description {
+  width: 600px;
+  position: relative;
+  margin-left: 30px;
+}
+
+.descP {
+  position: absolute;
+  bottom: 0;
+  font-size: 14px;
+}
+
+.priceBlock {
+  display: flex;
+  justify-content: space-between;
+  width: 200px;
+}
+
+.priceBlock img {
+  width: 20px;
+}
+
+.price {
+  text-align: end;
+}
+
+.price p {
+  font-size: 1.125em;
+  color: red;
+  margin-bottom: 20px;
+}
+.price span {
+  font-size: 14px;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.countItem {
+  display: flex;
+}
+
+.count {
+  border: 1px solid #333;
+  width: 36px;
+  height: 36px;
+  background-color: rgb(10, 56, 1);
+  color: #fff;
+  border-radius: 5px;
+  box-shadow: 0px 7px 25px rgb(58 70 48 / 15%);
+}
+
+.input {
+  width: 4.5rem;
+  height: 2.5rem;
+  text-align: center;
+  border: none;
+  outline: none;
+  background-color: #fff;
+  font-size: 1.125em;
+}
+
+.formPriceOrder {
+  position: relative;
+  width: 320px;
+  min-height: 400px;
+  height: 100%;
+  background-color: #f8f8f8;
+  border-radius: 5px;
+}
+
+.containerForm {
+  margin: 10px;
+}
+
+.sumPrice {
+  border-top: 1px solid #333;
+  border-bottom: 1px solid #333;
+}
+
+.infoPrice {
+  display: flex;
+  justify-content: space-between;
+}
+
+.infoPrice span {
+  color: #6a6a6a;
+  font-size: 14px;
+}
+.infoPrice p {
+  font-size: 14px;
+}
+
+.button {
+  position: absolute;
+  bottom: 20px;
+  margin-left: 15px;
+  width: 320px;
+}
+
+.data {
+  margin-top: 30px;
+  border-top: 1px solid #f5f5f5;
+  margin-bottom: 50px;
+}
+
+.userData {
+  display: flex;
+  justify-content: space-between;
+}
+.star {
+  position: relative;
+}
+.star p {
+  position: absolute;
+  width: 20px;
+  right: 0;
+  top: 5px;
+  z-index: 1;
+  color: red;
+}
+
+.inputForm {
+  position: relative;
+  padding-left: 20px; /* Отступ слева для звездочки */
+  width: 465px;
+  height: 32px;
+  margin-bottom: 10px;
+  color: #333;
+  border-radius: 0.25rem;
+  border: 1px solid #ececec;
+  padding: calc(0.5rem - 1px) calc(0.75rem - 1px);
+  transition: color 0.2s linear, background-color 0.2s linear,
+    border-bottom-color 0.2s linear, border-top-color 0.2s linear,
+    border-left-color 0.2s linear, border-right-color 0.2s linear;
+}
+
+.inputForm:hover,
+.inputForm:focus-visible {
+  border: 1px solid rgb(10, 56, 1);
+}
+
+.placeholder:after {
+  position: absolute;
+  top: 0;
+  right: 0;
+  color: red;
+  content: "*";
+}
+
+.textarea {
+  width: 975px;
+  height: 107px;
+  align-items: center;
+
+  transition: color 0.2s linear, background-color 0.2s linear,
+    border-bottom-color 0.2s linear, border-top-color 0.2s linear,
+    border-left-color 0.2s linear, border-right-color 0.2s linear;
+  color: #333;
+  background: #fff;
+  border: 1px solid #ececec;
+  border-radius: 0.25rem;
+  padding: calc(0.75rem - 1px);
+}
+
+@media (max-width: 1400px) {
+  .container {
+    width: 1200px;
+  }
+  .itemsCardOrder {
+    width: 800px;
+  }
+  .data {
+    width: 800px;
+  }
+  .inputForm {
+    width: 380px;
+    margin-left: 10px;
+  }
+  .textarea {
+    width: 794px;
+    margin-left: 10px;
+  }
+}
+@media (max-width: 1200px) {
+  .container {
+    width: 1000px;
+  }
+  .itemsCardOrder {
+    width: 700px;
+  }
+  .data {
+    width: 700px;
+  }
+  .description {
+    width: 300px;
+  }
+  .description h2 {
+    font-size: 14px;
+  }
+  .description p {
+    font-size: 12px;
+  }
+  .inputForm {
+    width: 330px;
+    margin-left: 5px;
+  }
+  .textarea {
+    width: 690px;
+    margin-left: 5px;
+  }
+  .button {
+    width: 255px;
+  }
+  .formPriceOrder {
+    position: relative;
+    width: 270px;
+    min-height: 400px;
+    height: 100%;
+  }
+}
+@media (max-width: 1000px) {
+  .container {
+    width: 768px;
+  }
+  .basket {
+    display: block;
+  }
+  .itemsCardOrder {
+    width: 768px;
+  }
+  .data {
+    width: 768px;
+  }
+  .inputForm {
+    width: 340px;
+    margin-left: 0px;
+  }
+  .textarea {
+    width: 745px;
+    margin-left: 0px;
+  }
+  .formPriceOrder {
+    width: 768px;
+  }
+  .button {
+    width: 768px;
+  }
+}
+@media (max-width: 768px) {
+  .container {
+    width: 480px;
+  }
+  .itemsCardOrder {
+    width: 480px;
+  }
+  .data {
+    width: 480px;
+  }
+  .description {
+    width: 200px;
+  }
+  .description h2 {
+    font-size: 12px;
+  }
+  .description p {
+    font-size: 11px;
+  }
+  .price p {
+    font-size: 14px;
+  }
+  .inputForm {
+    width: 200px;
+    margin-left: 5px;
+  }
+  .textarea {
+    width: 450px;
+    margin-left: 5px;
+  }
+  .formPriceOrder {
+    width: 480px;
+  }
+  .button {
+    width: 480px;
+  }
+}
+@media (max-width: 480px) {
+  .container {
+    width: 100%;
+  }
+  .itemsCardOrder {
+    width: 100%;
+    display: block;
+  }
+  .data {
+    width: 100%;
+  }
+  .infoItem {
+    width: 100%;
+  }
+  .priceBlock {
+    width: 100%;
+    display: flex;
+    margin-top: 10px;
+    background-color: #e4e4e4;
+    padding-top: 5px;
+    margin-bottom: 0;
+  }
+  .priceBlock p {
+    margin-bottom: 0;
+  }
+  .imgDelete {
+    width: 50px;
+  }
+
+  .price {
+    padding-right: 0px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-left: 50px;
+    margin-right: 10px;
+  }
+
+  .description {
+    width: 300px;
+    margin-left: 10px;
+  }
+  .userData {
+    display: block;
+  }
+  .inputForm {
+    width: 100%;
+    margin-left: 5px;
+  }
+  .textarea {
+    width: 100%;
+    margin-left: 5px;
+  }
+  .formPriceOrder {
+    width: 100%;
+  }
+  .button {
+    width: 100%;
+  }
+  .inputForm {
+    margin-left: 5px;
+    width: 90%;
+    height: 20px;
+  }
+  .textarea {
+    margin-left: 5px;
+    width: 90%;
+    height: 70px;
+  }
+}
